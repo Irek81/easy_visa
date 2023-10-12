@@ -9,6 +9,18 @@
     margin: 0 auto;
 }
 
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.services {
+    padding: 110px 0 80px;
+}
+
 /* HEADER */
 .header {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 100%), url(IMG/header_bg.png), lightgray 50% / cover no-repeat;
@@ -70,7 +82,6 @@
 
 .adress a {
     display: flex;
-    text-decoration: none;
     color: #AFAFAF;
     font-size: 16px;
     margin-top: 5px;
@@ -89,7 +100,6 @@
 
 .phone__content a {
     display: block;
-    text-decoration: none;
     font-size: 24px;
     color: #fff;
     margin: 4px 0;
@@ -109,7 +119,6 @@
 }
 
 .request-call a {
-    text-decoration: none;
     color: #fff;
     font-size: 14px;
     text-transform: uppercase;
@@ -124,14 +133,12 @@
 }
 
 .nav ul {
-    list-style: none;
     display: flex;
     justify-content: space-between;
     gap: 29px;
 }
 
 .nav ul a {
-    text-decoration: none;
     color: #fff;
     font-size: 16px;
 }
@@ -179,4 +186,76 @@
     cursor: pointer;
     background: linear-gradient(134deg, #C8A06F -0.01%, #BF894B 100.03%);
     transition: all 0.5s ease;
+}
+
+/* SERVICES */
+.services {
+    background-color: #F7F9FC;
+}
+
+.section-title {
+    text-transform: uppercase;
+    font-size: 48px;
+    color: #3D3E40;
+}
+
+.section-title span {
+    color: #BF894B;
+}
+
+.services__container {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: 685px 685px;
+    column-gap: 30px;
+    row-gap: 39px;
+}
+
+.service {
+    background-color: #fff;
+    border-radius: 16px;
+    width: 685px;
+    height: 514px;
+    padding: 35px 90px 40px 40px;
+    position: relative;
+}
+
+.service-title {
+    text-transform: uppercase;
+    font-size: 32px;
+    color: #3D3E40;
+}
+
+.service-conditions {
+    margin-top: 24px;
+    position: relative;
+}
+
+.service-conditions__items {
+    margin-top: 8px;
+    margin-left: 25px;
+    line-height: 160%;
+    font-size: 18px;
+}
+
+.service-conditions__items::before {
+    content: ' ';
+    position: absolute;
+    width: 19px;
+    height: 16px;
+    background-image: url(IMG/Vector.svg);
+    left: 0;
+}
+
+.learn-more {
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #fff;
+    background-color: #C8A06F;
+    border: none;
+    border-radius: 48px;
+    position: absolute;
+    bottom: 40px;
+    width: 244px;
+    height: 72px;
 }
