@@ -2,10 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 .main-container {
-    width: 1400px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 
@@ -130,9 +131,11 @@ a {
 .request-call {
     border: #fff solid 1px;
     border-radius: 48px;
-    padding: 17px 43px;
+    padding: 17px 35px;
     width: 234px;
     height: 56px;
+    color: #fff;
+    text-transform: uppercase;
 }
 
 .request-call a {
@@ -161,7 +164,7 @@ a {
 }
 
 .main-title {
-    width: 864px;
+    max-width: 864px;
     text-align: center;
     margin: 120px auto 0;
     color: #fff;
@@ -377,4 +380,27 @@ a {
     height: 185px;
     border-radius: 8px;
     background: rgba(244, 245, 248, 0.30);
+}
+
+/* RESPONSIVE */
+@media (max-width: 360px) {
+    /* HEADER */
+    .prenav {
+        flex-direction: column;
+    }
+
+    .nav ul {
+        flex-direction: column;
+    }
+
+    .main-title {
+        max-width: 340px;
+        font-size: 28px;
+    }
+
+    .offer {
+        max-width: 340px;
+        font-size: 16px;
+        margin-top: 16px;
+    }
 }
