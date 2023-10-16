@@ -399,10 +399,50 @@ a {
 
     .prenav {
         flex-direction: column;
+        display: none;
+    }
+
+    .nav {
+        display: none;
     }
 
     .nav ul {
         flex-direction: column;
+    }
+
+    .burger {
+        display: block;
+        position: absolute;
+        width: 45px;
+        height: 25px;
+        cursor: pointer;
+    }
+
+    .burger span, .burger::after {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 10%;
+        transition: all .3s ease;
+        background-color: #fff;
+    }
+
+    .burger::before {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 10%;
+        transition: all .3s ease;
+        background-color: #fff;
+    }
+
+    .burger::after {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 10%;
+        transition: all .3s ease;
+        background-color: #fff;
     }
 
     .main-title {
