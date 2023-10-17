@@ -418,7 +418,7 @@ a {
         cursor: pointer;
     }
 
-    .burger span, .burger::after {
+    .burger span {
         position: absolute;
         left: 0;
         width: 100%;
